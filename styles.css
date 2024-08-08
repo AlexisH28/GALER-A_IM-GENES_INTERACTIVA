@@ -1,4 +1,5 @@
 /* Fuentes Implementadas */
+
 @font-face {
     font-family: 'IndieFlower';
     src: url(/Fuentes/IndieFlower-Regular.ttf);
@@ -8,6 +9,8 @@
     font-family: 'McLaren';
     src: url(/Fuentes/McLaren-Regular.ttf);
 }
+
+/* Estilos Body */
 
 body {
     font-family: 'IndieFlower', sans-serif;
@@ -48,6 +51,8 @@ button {
 button:hover {
     background-color: #0056b3;
 }
+
+/* Estilos Galería y Elementos */
 
 .galeria {
     display: flex;
@@ -107,6 +112,8 @@ button:hover {
     background-color: #218838;
 }
 
+/* Estilos Modal */
+
 .modal {
     display: none;
     position: fixed;
@@ -156,6 +163,8 @@ button:hover {
 .aparecer {
     animation: aparecer 0.5s forwards;
 }
+
+/* Animaciones Implementadas */
 
 @keyframes aparecer {
     from {
