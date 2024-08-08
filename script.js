@@ -11,11 +11,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Se definen un conjunto de imágenes que aparecerán al momento de ejecutar la página.
     const imagenesIniciales = [
-        { url: 'https://loscoches.com/wp-content/uploads/2021/04/carros-deportivos-potencia.jpg', titulo: 'Imagen 1' },
-        { url: 'https://static.wixstatic.com/media/3104c9_e4cba66950b8452e9367826ac9895ac0~mv2.png/v1/fill/w_480,h_426,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/3104c9_e4cba66950b8452e9367826ac9895ac0~mv2.png', titulo: 'Imagen 2' },
-        { url: 'https://www.shutterstock.com/image-photo/frankfurt-sept-2015-bugatti-chiron-600nw-1253646895.jpg', titulo: 'Imagen 3' },
-        { url: 'https://content.media.mcdn.es/api/v1/mnet-media/images/52/5284172f-dc95-4d34-a7ed-0e29ed28336e?rule=articleBodyImage', titulo: 'Imagen 4' },
-        { url: 'https://content.media.mcdn.es/api/v1/mnet-media/images/2e/2e09651a-ac00-432a-8644-b717c3d255d4?rule=articleBodyImage', titulo: 'Imagen 5' },
+        { url: 'https://loscoches.com/wp-content/uploads/2021/04/carros-deportivos-potencia.jpg', titulo: 'Mustang' },
+        { url: 'https://static.wixstatic.com/media/3104c9_e4cba66950b8452e9367826ac9895ac0~mv2.png/v1/fill/w_480,h_426,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/3104c9_e4cba66950b8452e9367826ac9895ac0~mv2.png', titulo: 'R15' },
+        { url: 'https://www.shutterstock.com/image-photo/frankfurt-sept-2015-bugatti-chiron-600nw-1253646895.jpg', titulo: 'Bugatti Veyron' },
+        { url: 'https://content.media.mcdn.es/api/v1/mnet-media/images/52/5284172f-dc95-4d34-a7ed-0e29ed28336e?rule=articleBodyImage', titulo: 'Kawasaki Eliminator' },
+        { url: 'https://content.media.mcdn.es/api/v1/mnet-media/images/2e/2e09651a-ac00-432a-8644-b717c3d255d4?rule=articleBodyImage', titulo: 'Kawasaki Ninja' },
     ];
 
     // Itera sobre las imágenes predeterminadas y las añade a la galería.
