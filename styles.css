@@ -1,5 +1,15 @@
+@font-face {
+    font-family: 'IndieFlower';
+    src: url(/Fuentes/IndieFlower-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'McLaren';
+    src: url(/Fuentes/McLaren-Regular.ttf);
+}
+
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'IndieFlower',;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -11,6 +21,7 @@ body {
 
 .contenedor-formulario {
     margin-bottom: 20px;
+    font-family: 'McLaren';
 }
 
 input[type="text"] {
@@ -18,6 +29,7 @@ input[type="text"] {
     margin: 5px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    font-family: 'McLaren';
 }
 
 button {
@@ -29,6 +41,7 @@ button {
     color: white;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    font-family: 'McLaren';
 }
 
 button:hover {
