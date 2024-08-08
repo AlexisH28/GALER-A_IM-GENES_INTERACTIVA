@@ -67,11 +67,12 @@ button:hover {
     border: 1px solid #ddd;
     border-radius: 10px;
     overflow: hidden;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .elemento-galeria:hover {
     transform: scale(1.05);
+    box-shadow: 0 4px 8px rgb(0, 0, 0, 0.3);
 }
 
 .elemento-galeria img {
