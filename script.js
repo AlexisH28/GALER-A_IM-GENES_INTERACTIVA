@@ -36,8 +36,10 @@ document.addEventListener('DOMContentLoaded', () => {
             botonEliminar.addEventListener('click', () => {
                 // Añade una clase para la animación de desvanecimiento y elimina el elemento después de la transición
                 elementoGaleria.classList.add('desvanecer');
-                elementoGaleria.addEventListener('transitionend', () => {
-                    elementoGaleria.remove();
+                elementoGaleria.addEventListener('animationend', (event) => {
+                    if (event.target === elementoGaleria && elementoGaleria.classList.contains('desvanecer')) {
+                        elementoGaleria.remove();
+                    }
                 });
             });
 
@@ -62,7 +64,9 @@ document.addEventListener('DOMContentLoaded', () => {
             galeria.appendChild(elementoGaleria);
 
             // Añade una clase para la animación de aparición
-            imagen.classList.add('aparecer');
+            requestAnimationFrame(() => {
+                elementoGaleria.classList.add('aparecer');
+            });
 
             // Limpia los campos de entrada
             inputUrlImagen.value = '';

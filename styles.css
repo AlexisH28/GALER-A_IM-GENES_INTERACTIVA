@@ -1,116 +1,127 @@
-@font-face {
-    font-family: 'IndieFlower';
-    src: url(/Fuente/IndieFlower-Regular.ttf);
-}
-
 body {
-    font-family: 'IndieFlower';
+    font-family: 'Montserrat', sans-serif;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    height: 100vh;
-    margin: 0;
+    justify-content: center;
     background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
 }
 
-.contenedor-galeria {
-    text-align: center;
+.contenedor-formulario {
+    margin-bottom: 20px;
 }
 
-#url-imagen, #titulo-imagen {
-    margin: 5px;
+input[type="text"] {
     padding: 10px;
+    margin: 5px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 
-#boton-anadir-imagen {
+button {
     padding: 10px 20px;
+    margin: 5px;
     border: none;
     border-radius: 5px;
-    background-color: #007bff;
+    background-color: #007BFF;
     color: white;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-#boton-anadir-imagen:hover {
+button:hover {
     background-color: #0056b3;
 }
 
-#galeria {
+.galeria {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 20px;
-    gap: 10px;
+    gap: 20px;
     justify-content: center;
 }
 
 .elemento-galeria {
     position: relative;
-    width: 150px;
-    text-align: center;
+    width: 200px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.elemento-galeria:hover {
+    transform: scale(1.05);
 }
 
 .elemento-galeria img {
     width: 100%;
-    border-radius: 10px;
-    transition: transform 0.3s, opacity 0.3s;
+    display: block;
+    border-bottom: 1px solid #ddd;
 }
 
 .elemento-galeria h3 {
-    margin: 5px 0;
+    margin: 0;
+    padding: 10px;
+    background-color: #fff;
+    text-align: center;
+    font-size: 1.2em;
 }
 
 .elemento-galeria button {
-    margin: 5px;
-    padding: 5px 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #dc3545;
+    width: 100%;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    background-color: #ff4c4c;
     color: white;
     cursor: pointer;
-}
-
-.elemento-galeria .boton-detalles {
-    background-color: #007bff;
+    transition: background-color 0.3s ease;
 }
 
 .elemento-galeria button:hover {
-    opacity: 0.8;
+    background-color: #d11a1a;
+}
+
+.boton-detalles {
+    background-color: #28a745;
+}
+
+.boton-detalles:hover {
+    background-color: #218838;
 }
 
 .modal {
     display: none;
     position: fixed;
     z-index: 1;
-    padding-top: 60px;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0,0,0,0.9);
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
-.contenido-modal {
+.modal-contenido {
     margin: auto;
     display: block;
     width: 80%;
     max-width: 700px;
-    animation-name: zoom;
-    animation-duration: 0.6s;
 }
 
-@keyframes zoom {
-    from {transform: scale(0)} 
-    to {transform: scale(1)}
+.modal-titulo {
+    text-align: center;
+    color: white;
+    font-size: 1.5em;
+    margin-top: 20px;
 }
 
 .cerrar {
     position: absolute;
-    top: 15px;
+    top: 20px;
     right: 35px;
-    color: white;
+    color: #fff;
     font-size: 40px;
     font-weight: bold;
     cursor: pointer;
@@ -123,11 +134,32 @@ body {
     cursor: pointer;
 }
 
-#titulo-modal {
-    margin: auto;
-    display: block;
-    text-align: center;
-    color: white;
-    padding: 10px 0;
-    height: 150px;
+.aparecer {
+    animation: aparecer 0.5s forwards;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.desvanecer {
+    animation: desvanecer 0.5s forwards;
+}
+
+@keyframes desvanecer {
+    from {
+        opacity: 1;
+        transform: scale(1);
+    }
+    to {
+        opacity: 0;
+        transform: scale(0.9);
+    }
 }

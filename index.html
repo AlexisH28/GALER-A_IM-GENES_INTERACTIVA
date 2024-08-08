@@ -3,21 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galería de Imágenes</title>
+    <title>🖼️ GALERÍA DE IMÁGENES 🖼️</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="contenedor-galeria">
+    <div class="contenedor-formulario">
         <input type="text" id="url-imagen" placeholder="URL de la imagen">
         <input type="text" id="titulo-imagen" placeholder="Título de la imagen">
         <button id="boton-anadir-imagen">Añadir Imagen</button>
-        <div id="galeria"></div>
     </div>
+    <div id="galeria" class="galeria"></div>
+
     <div id="modal-imagen" class="modal">
         <span class="cerrar">&times;</span>
-        <img class="contenido-modal" id="imagen-modal">
-        <div id="titulo-modal"></div>
+        <img id="imagen-modal" class="modal-contenido">
+        <div id="titulo-modal" class="modal-titulo"></div>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
