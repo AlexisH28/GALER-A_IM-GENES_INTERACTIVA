@@ -9,7 +9,7 @@
 }
 
 body {
-    font-family: 'IndieFlower',;
+    font-family: 'IndieFlower', sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -21,7 +21,7 @@ body {
 
 .contenedor-formulario {
     margin-bottom: 20px;
-    font-family: 'McLaren';
+    font-family: 'McLaren', sans-serif;
 }
 
 input[type="text"] {
@@ -29,7 +29,7 @@ input[type="text"] {
     margin: 5px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    font-family: 'McLaren';
+    font-family: 'McLaren', sans-serif;
 }
 
 button {
@@ -41,7 +41,7 @@ button {
     color: white;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    font-family: 'McLaren';
+    font-family: 'McLaren', sans-serif;
 }
 
 button:hover {
@@ -72,6 +72,7 @@ button:hover {
     width: 100%;
     display: block;
     border-bottom: 1px solid #ddd;
+    font-family: 'IndieFlower', sans-serif;
 }
 
 .elemento-galeria h3 {
@@ -80,6 +81,7 @@ button:hover {
     background-color: #fff;
     text-align: center;
     font-size: 1.2em;
+    font-family: 'IndieFlower', sans-serif;
 }
 
 .elemento-galeria button {
@@ -121,6 +123,8 @@ button:hover {
     display: block;
     width: 80%;
     max-width: 700px;
+    font-family: 'IndieFlower', sans-serif;
+    animation: zoom 0.5s;
 }
 
 .modal-titulo {
@@ -128,6 +132,7 @@ button:hover {
     color: white;
     font-size: 1.5em;
     margin-top: 20px;
+    font-family: 'IndieFlower', sans-serif;
 }
 
 .cerrar {
@@ -174,5 +179,14 @@ button:hover {
     to {
         opacity: 0;
         transform: scale(0.9);
+    }
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
     }
 }
