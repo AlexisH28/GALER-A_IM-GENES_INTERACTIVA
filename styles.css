@@ -1,5 +1,10 @@
+@font-face {
+    font-family: 'IndieFlower';
+    src: url(/Fuente/IndieFlower-Regular.ttf);
+}
+
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'IndieFlower';
     display: flex;
     justify-content: center;
     align-items: center;
