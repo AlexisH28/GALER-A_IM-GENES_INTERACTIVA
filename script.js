@@ -53,15 +53,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Función para agregar una imagen a la galería con su título y botones.
     function agregarImagenAGaleria(urlImagen, tituloImagen) {
-        // Se Crea un contenedor para la imagen y sus elementos asociados
+        // Se crea un contenedor para la imagen y sus elementos asociados
         const elementoGaleria = document.createElement('div');
         elementoGaleria.classList.add('elemento-galeria');
 
-        // Se Crea el elemento de la imagen y establece su fuente
+        // Se crea el elemento de la imagen y establece su fuente
         const imagen = document.createElement('img');
         imagen.src = urlImagen;
 
-        // Se Crea un título para la imagen
+        // Se crea un título para la imagen
         const titulo = document.createElement('h3');
         titulo.textContent = tituloImagen;
 
