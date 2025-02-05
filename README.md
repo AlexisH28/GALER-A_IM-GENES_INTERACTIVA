@@ -1,4 +1,4 @@
-# GALERÍA INTERACTIVA 💥
+# GALERÍA INTERACTIVA 📱
 
 ## Tabla de Contenido 📋
 | Indice | Título  |
