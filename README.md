@@ -4,11 +4,11 @@
 | Indice | Título  |
 |--|--|
 | 1. | [Descripción](#Descripción) |
-| 2. | [Funcionalidades](#Funcionalidades) |
-| 3. | [Tecnologías](#Tecnologías) |
-| 4. | [USO](#USO) |
-| 5. | [Contribución](#Contribución) |
-| 6. | [Contacto](#Contacto) |
+| 2. | [Funcionalidades](#funcionalidades-) |
+| 3. | [Tecnologías](#tecnologías-%EF%B8%8F) |
+| 4. | [USO](#uso-) |
+| 5. | [Contribución](#contribución-) |
+| 6. | [Contacto](#contacto-) |
 
 ## Descripción📱
 
